@@ -1,12 +1,10 @@
 body {
   background-color: #c0bdc2e1;
   width: 100%;
+  margin: 0;
 }
 .header {
   color: white;
-  position: absolute;
-  top: 0;
-  left: 500px;
 }
 .header h1 {
   text-shadow: 2px 2px 3px black;
@@ -16,11 +14,14 @@ h2 {
   font-family: Courgette;
 }
 .overall {
-  margin: 80px 80px 40px 80px;
+  padding: 0 80px 40px 80px;
+  max-width: 1440px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .flex-container div {
-  margin: 15px;
+  padding: 15px 10px 15px 10px;
 }
 .flex-container {
   background-color: #e417e4;
@@ -77,12 +78,10 @@ h2 {
 }
 .content {
   background-color: white;
-  margin-right: 10px;
+  padding: 10px;
 }
-.content,
-h2,
-p {
-  padding-left: 10px;
+.content {
+  padding: 10px;
 }
 h1 {
   text-align: center;
@@ -96,5 +95,12 @@ h1 {
 @media screen and (max-width: 767px) {
   .section-container {
     flex-direction: column;
+  }
+  .flex-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .overall {
+    padding: 20px 15px 40px 15px;
   }
 }
